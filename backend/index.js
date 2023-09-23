@@ -58,7 +58,7 @@ app.post("/api/create-checkout-session", async(req,res)=>{
 
 })
 
-
+module.exports = app;
 // app.listen(port, () => {
 //   console.log(`Example app listening on http://localhost:${port}`);
 // });
