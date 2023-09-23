@@ -22,7 +22,7 @@ app.get("/", (req, res) => {
 
 app.use(express.json())
 app.use(cors({
-  origin: ["https://go-food-frontend-omega.vercel.app"],
+  origin: [""],
   methods: ["POST", "GET"],
   credentials: true
 }));
