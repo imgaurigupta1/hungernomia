@@ -1,0 +1,172 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.hero-container{
+  height: 100vh;
+}
+
+.heroheading{
+  font-size: 5rem;
+}
+
+.minorheroheading{
+  margin-bottom: 12rem; 
+}
+
+/* .superfont{
+  top: 50%;
+  left: 30%;
+  transform: translateY(-50%);
+} */
+.customfont{
+  font-family: 'Quicksand', sans-serif !important;
+  font-size: 3.8rem;
+}
+
+video{
+  height: 100%;
+  object-fit: cover;
+  z-index: -1; 
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.carousel-item img {
+  object-fit: cover;
+}
+
+
+
+.formbg {
+  padding: 3rem !important;
+  background: transparent;
+  /* background: rgb(131, 58, 180);  */
+  background: linear-gradient( 
+     90deg,
+    /* rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100% */
+  );
+}
+
+.mainbg {
+  padding: 2rem !important;
+  /* background: rgb(232, 140, 191); 
+  background: radial-gradient( 
+    circle,
+    rgba(238, 174, 202, 0.5) 0%,
+    rgba(226, 230, 236, 0.5) 100% 
+    
+   ); */
+   border-radius: 2rem; 
+  width: 60% !important;
+}
+
+.roundedform {
+  border-radius: 3rem !important;
+}
+
+.roundedform label{
+  font-size: 1.3rem;
+}
+
+.formhead h2{
+  font-size: 3rem;
+}
+
+.maincontainer {
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 700px) {
+  .formbg {
+    padding: 0 !important;
+  }
+
+  .mainbg {
+    padding: 0 !important;
+    border-radius: 3rem !important;
+  }
+
+  .buttoncss{
+    flex-direction: column !important;
+  }
+}
+
+.card{
+  border-radius: 2rem !important;
+}
+
+.card img{
+  border-top-left-radius: 2rem !important;
+  border-top-right-radius: 2rem !important;
+}
+
+.formimage img {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: -1;
+}
+
+.toparrow{
+  bottom: 2%;
+  right: 2%;
+  border-radius: 50%;
+  height: 6rem;
+  width: 6rem;
+  font-size: 3rem;
+  padding: 0.5rem;
+  font-weight: 800;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.toparrow:hover{
+  scale: 1.2;
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+
+.toparrow button{
+  border: none;
+  background: none;
+}
