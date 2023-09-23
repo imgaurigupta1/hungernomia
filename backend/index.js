@@ -8,7 +8,7 @@ const mongoDB = require("./db")
 mongoDB();
 
 app.use((req,res,next)=>{
-  res.setHeader("Access-Control-Allow-Origin","http://localhost:3000");
+  res.setHeader("Access-Control-Allow-Origin","https://hungernomiawebsitebackend.vercel.app");
   res.header(
     "Access-Control-Allow-Headers",
     "Origin, X-Requested-With, Content-Type, Accept"
@@ -50,8 +50,8 @@ app.post("/api/create-checkout-session", async(req,res)=>{
     payment_method_types:["card"],
     line_items:lineitems,
     mode: "payment",
-    success_url:"http://localhost:3000/success",
-    success_url:"http://localhost:3000/cancel"
+    success_url:"https://hungernomiawebsitebackend.vercel.app/success",
+    success_url:"https://hungernomiawebsitebackend.vercel.app/cancel"
   })
 
   res.json({id:session.id})
