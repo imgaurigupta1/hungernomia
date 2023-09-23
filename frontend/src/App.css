@@ -22,7 +22,7 @@
 }
 
 .minorheroheading{
-  margin-bottom: 12rem; 
+  margin-bottom: 17%; 
 }
 
 /* .superfont{
@@ -169,4 +169,7 @@ video{
 .toparrow button{
   border: none;
   background: none;
+}
+select{
+  font-size: 0.84rem !important;
 }
