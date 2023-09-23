@@ -27,7 +27,7 @@ export default function Cart() {
       price: item.price,
       img: item.img,
     }));
-    let response = await fetch("https://hungernomiawebsitebackend.vercel.app/api/orderData", {
+    let response = await fetch("https://hungernomia-backend.onrender.com/api/orderData", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

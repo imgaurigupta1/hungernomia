@@ -12,7 +12,7 @@ export default function Login() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const response = await fetch("https://hungernomiawebsitebackend.vercel.app/api/loginuser", {
+    const response = await fetch("https://hungernomia-backend.onrender.com/api/loginuser", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
