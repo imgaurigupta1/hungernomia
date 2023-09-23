@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express()
-const port = process.env.PORT || 5000
+// const port = process.env.PORT || 5000
 const cors = require("cors");
 const stripe = require("stripe")("sk_test_51N94gySA5ZcPgQCJIALDFZgNRFghGfdgDuxzbU9R0KGZEyDicomtMjmxGEiE7b9A8B9LvxRlQ3C4eKqHu7IzLoIN00GIPkZYYa")
 
@@ -21,7 +21,11 @@ app.get("/", (req, res) => {
 });
 
 app.use(express.json())
-app.use(cors())
+app.use(cors({
+  origin: ["https://go-food-frontend-omega.vercel.app"],
+  methods: ["POST", "GET"],
+  credentials: true
+}));
 
 app.use('/api', require("./Routes/CreateUser"))
 app.use('/api', require("./Routes/DisplayData"))
@@ -53,6 +57,6 @@ app.post("/api/create-checkout-session", async(req,res)=>{
 })
 
 
-app.listen(port, () => {
-  console.log(`Example app listening on http://localhost:${port}`);
-});
+// app.listen(port, () => {
+//   console.log(`Example app listening on http://localhost:${port}`);
+// });
