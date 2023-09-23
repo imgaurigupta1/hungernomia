@@ -21,11 +21,13 @@ app.get("/", (req, res) => {
 });
 
 app.use(express.json())
-app.use(cors({
-  origin: [""],
-  methods: ["POST", "GET"],
-  credentials: true
-}));
+app.use(cors(
+//   {
+//   origin: [""],
+//   methods: ["POST", "GET"],
+//   credentials: true
+// }
+));
 
 app.use('/api', require("./Routes/CreateUser"))
 app.use('/api', require("./Routes/DisplayData"))
