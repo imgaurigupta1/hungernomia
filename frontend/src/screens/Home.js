@@ -59,7 +59,7 @@ export default function Home() {
           autoPlay
           loop
           muted
-          src="Videos/herovideo.mp4"
+          src="Videos/herovideo2.mp4"
         ></video>
         <div
           className="position-absolute bottom-0 start-50 translate-middle-x mb-4"
