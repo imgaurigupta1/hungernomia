@@ -23,7 +23,7 @@ app.get("/", (req, res) => {
 app.use(express.json())
 app.use(cors(
   {
-  origin: ["https://hungernomia.vercel.app/"],
+  origin: ["https://hungernomia.vercel.app"],
   methods: ["POST", "GET"],
   credentials: true
 }
