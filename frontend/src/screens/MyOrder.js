@@ -7,7 +7,7 @@ export default function MyOrder() {
 
   const fetchMyOrder = async () => {
     // console.log(localStorage.getItem("userEmail"));
-    await fetch("https://hungernomia-backend.onrender.com/api/myOrderData", {
+    await fetch("https://go-food-frontend-omega.vercel.app/api/myOrderData", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
