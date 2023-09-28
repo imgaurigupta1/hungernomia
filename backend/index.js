@@ -7,14 +7,14 @@ const stripe = require("stripe")("sk_test_51N94gySA5ZcPgQCJIALDFZgNRFghGfdgDuxzb
 const mongoDB = require("./db")
 mongoDB();
 
-app.use((req,res,next)=>{
-  res.setHeader("Access-Control-Allow-Origin","https://hungernomiawebsitebackend.vercel.app");
-  res.header(
-    "Access-Control-Allow-Headers",
-    "Origin, X-Requested-With, Content-Type, Accept"
-  );
-  next();
-})
+// app.use((req,res,next)=>{
+//   res.setHeader("Access-Control-Allow-Origin","https://hungernomiawebsitebackend.vercel.app");
+//   res.header(
+//     "Access-Control-Allow-Headers",
+//     "Origin, X-Requested-With, Content-Type, Accept"
+//   );
+//   next();
+// })
 
 app.get("/", (req, res) => {
   res.send("Hello World!");
@@ -22,11 +22,11 @@ app.get("/", (req, res) => {
 
 app.use(express.json())
 app.use(cors(
-//   {
-//   origin: [""],
-//   methods: ["POST", "GET"],
-//   credentials: true
-// }
+  {
+  origin: ["https://hungernomiawebsitebackend.vercel.app"],
+  methods: ["POST", "GET"],
+  credentials: true
+}
 ));
 
 app.use('/api', require("./Routes/CreateUser"))
