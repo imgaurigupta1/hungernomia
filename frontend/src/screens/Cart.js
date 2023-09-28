@@ -27,7 +27,7 @@ export default function Cart() {
       price: item.price,
       img: item.img,
     }));
-    let response = await fetch("https://hungernomia-backend.onrender.com/api/orderData", {
+    let response = await fetch("https://hungernomiawebsitebackend.vercel.app/api/orderData", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -56,7 +56,7 @@ export default function Cart() {
       "Content-Type": "application/json",
     };
     const response = await fetch(
-      "https://hungernomia-backend.onrender.com/api/create-checkout-session",
+      "https://hungernomiawebsitebackend.vercel.app/api/create-checkout-session",
       {
         method: "POST",
         headers: headers,

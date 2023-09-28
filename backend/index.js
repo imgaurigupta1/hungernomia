@@ -23,7 +23,7 @@ app.get("/", (req, res) => {
 app.use(express.json())
 app.use(cors(
   {
-  origin: ["https://hungernomiawebsitebackend.vercel.app"],
+  origin: ["https://hungernomia.vercel.app/"],
   methods: ["POST", "GET"],
   credentials: true
 }
@@ -50,8 +50,8 @@ app.post("/api/create-checkout-session", async(req,res)=>{
     payment_method_types:["card"],
     line_items:lineitems,
     mode: "payment",
-    success_url:"https://hungernomiawebsitebackend.vercel.app/success",
-    success_url:"https://hungernomiawebsitebackend.vercel.app/cancel"
+    success_url:"https://hungernomia.vercel.app/success",
+    cancel_url:"https://hungernomia.vercel.app/cancel"
   })
 
   res.json({id:session.id})
