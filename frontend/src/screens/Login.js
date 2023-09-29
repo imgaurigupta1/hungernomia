@@ -44,7 +44,7 @@ export default function Login() {
   return (
     
     <div className='container d-flex maincontainer formimage'>
-      <img src='https://img.freepik.com/free-vector/color-doodle-food-burger-pattern_1409-3918.jpg?w=826&t=st=1695996429~exp=1695997029~hmac=6144b2e0a54bb4ba40495d77dc266159edfaa62add3c75afd6d2e6fcdd043eb1'></img>
+      <img src='https://www.freepik.com/free-vector/restaurant-mural-wallpaper_10498711.htm#query=fast%20food%20background&position=9&from_view=search&track=ais'></img>
 
       <div className="container mainbg w-60">
         
