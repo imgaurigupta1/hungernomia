@@ -173,3 +173,22 @@ video{
 select{
   font-size: 0.84rem !important;
 }
+
+@media screen and (max-width: 500px) {
+    .heroheading {
+      font-size: 4rem;
+      text-align: center;
+  }
+  .customfont {
+    font-size: 2.75rem;
+    text-align: center;
+  }
+  .minorheroheading {
+    margin-bottom: 85%;
+  }
+}
+@media screen and (max-width: 920px) {
+  .minorheroheading {
+    margin-bottom: 73%;
+  }
+}
