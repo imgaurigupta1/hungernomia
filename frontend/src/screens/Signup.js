@@ -46,7 +46,7 @@ export default function Signup() {
   return (
     <div>
       <div className="container d-flex maincontainer formimage">
-      <img src="https://img.freepik.com/free-vector/restaurant-mural-wallpaper_23-2148694555.jpg?size=626&ext=jpg&uid=R112205939&ga=GA1.2.1022357277.1689595536&semt=ais"></img>
+      <img src="https://www.freepik.com/free-vector/color-doodle-food-burger-pattern_58440087.htm#query=fast%20food%20background&position=24&from_view=search&track=ais"></img>
       <div className="container mainbg w-60">
         <form
           className="w-70 mx-auto formbg roundedform"

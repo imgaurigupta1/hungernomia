@@ -44,7 +44,7 @@ export default function Login() {
   return (
     
     <div className='container d-flex maincontainer formimage'>
-      <img src='https://www.freepik.com/free-vector/restaurant-mural-wallpaper_10498711.htm#query=fast%20food%20background&position=9&from_view=search&track=ais'></img>
+      <img src='https://www.freepik.com/free-vector/fast-food-pattern-background_58440163.htm#page=2&query=fast%20food%20background&position=35&from_view=search&track=ais'></img>
 
       <div className="container mainbg w-60">
         
