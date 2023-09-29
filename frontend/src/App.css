@@ -179,16 +179,36 @@ select{
     margin-bottom: 73%;
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 768px){
+    .minorheroheading {
+    margin-bottom: 48%;
+    }
+}
+@media screen and (max-width: 500px){
     .heroheading {
-      font-size: 4rem;
-      text-align: center;
-  }
+        font-size: 4rem;
+        text-align: center;
+    }
   .customfont {
     font-size: 2.75rem;
     text-align: center;
   }
   .minorheroheading {
-    margin-bottom: 85%;
+    margin-bottom: 82%;
   }
+  
+}
+@media screen and (max-width: 400px){
+  .heroheading {
+      font-size: 3rem;
+      text-align: center;
+  }
+.customfont {
+  font-size: 2rem;
+  text-align: center;
+}
+.minorheroheading {
+  margin-bottom: 68%;
+}
+
 }
