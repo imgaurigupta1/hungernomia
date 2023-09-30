@@ -220,7 +220,6 @@ select {
     margin-bottom: 68%;
   }
   .navbarcss {
-    /* background-color: rgb(37, 34, 34); */
     background: rgb(0,0,0);
 background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(90,93,93,1) 92%);
     padding-bottom: 1.5rem !important;
