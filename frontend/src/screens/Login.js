@@ -54,7 +54,7 @@ export default function Login() {
           onSubmit={handleSubmit}
         >
           <div className='formhead text-center'>
-            <h2 className='w-auto mx-auto text-dark'>Sign in</h2>
+            <h2 className='w-auto mx-auto text-white'>Sign in</h2>
 
           </div>
           

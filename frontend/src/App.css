@@ -13,16 +13,16 @@
   }
 }
 
-.hero-container{
+.hero-container {
   height: 100vh;
 }
 
-.heroheading{
+.heroheading {
   font-size: 5rem;
 }
 
-.minorheroheading{
-  margin-bottom: 12%; 
+.minorheroheading {
+  margin-bottom: 12%;
 }
 
 /* .superfont{
@@ -30,15 +30,15 @@
   left: 30%;
   transform: translateY(-50%);
 } */
-.customfont{
+.customfont {
   font-family: 'Quicksand', sans-serif !important;
   font-size: 3.35rem;
 }
 
-video{
+video {
   height: 100%;
   object-fit: cover;
-  z-index: -1; 
+  z-index: -1;
 }
 
 .App-header {
@@ -60,6 +60,7 @@ video{
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -75,12 +76,11 @@ video{
   padding: 3rem !important;
   background: transparent;
   /* background: rgb(131, 58, 180);  */
-  background: linear-gradient( 
-     90deg,
-    /* rgba(131, 58, 180, 1) 0%,
+  background: linear-gradient(90deg,
+      /* rgba(131, 58, 180, 1) 0%,
     rgba(253, 29, 29, 1) 50%,
     rgba(252, 176, 69, 1) 100% */
-  );
+    );
 }
 
 .mainbg {
@@ -92,19 +92,19 @@ video{
     rgba(226, 230, 236, 0.5) 100% 
     
    ); */
-   border-radius: 2rem; 
+  border-radius: 2rem;
   width: 60% !important;
 }
 
 .roundedform {
-  border-radius: 3rem !important;
+  border-radius: 0 !important;
 }
 
-.roundedform label{
+.roundedform label {
   font-size: 1.3rem;
 }
 
-.formhead h2{
+.formhead h2 {
   font-size: 3rem;
 }
 
@@ -125,16 +125,16 @@ video{
     width: 100% !important;
   }
 
-  .buttoncss{
+  .buttoncss {
     flex-direction: column !important;
   }
 }
 
-.card{
+.card {
   border-radius: 2rem !important;
 }
 
-.card img{
+.card img {
   border-top-left-radius: 2rem !important;
   border-top-right-radius: 2rem !important;
 }
@@ -148,7 +148,7 @@ video{
   z-index: -1;
 }
 
-.toparrow{
+.toparrow {
   bottom: 2%;
   right: 2%;
   border-radius: 50%;
@@ -161,17 +161,18 @@ video{
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.toparrow:hover{
+.toparrow:hover {
   scale: 1.2;
   transition: 0.2s ease;
   cursor: pointer;
 }
 
-.toparrow button{
+.toparrow button {
   border: none;
   background: none;
 }
-select{
+
+select {
   font-size: 0.84rem !important;
 }
 
@@ -180,48 +181,66 @@ select{
     margin-bottom: 73%;
   }
 }
-@media screen and (max-width: 768px){
-    .minorheroheading {
+
+@media screen and (max-width: 768px) {
+  .minorheroheading {
     margin-bottom: 48%;
-    }
+  }
 }
-@media screen and (max-width: 500px){
-    .heroheading {
-        font-size: 4rem;
-        text-align: center;
-    }
+
+@media screen and (max-width: 500px) {
+  .heroheading {
+    font-size: 4rem;
+    text-align: center;
+  }
+
   .customfont {
     font-size: 2.75rem;
     text-align: center;
   }
+
   .minorheroheading {
-    margin-bottom: 82%;
+    margin-bottom: 78%;
   }
-  
-}
-@media screen and (max-width: 400px){
-  .heroheading {
-      font-size: 3rem;
-      text-align: center;
-  }
-.customfont {
-  font-size: 2rem;
-  text-align: center;
-}
-.minorheroheading {
-  margin-bottom: 68%;
-}
 
 }
-.navbarclass{
+
+@media screen and (max-width: 400px) {
+  .heroheading {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .customfont {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .minorheroheading {
+    margin-bottom: 68%;
+  }
+  .navbarcss {
+    /* background-color: rgb(37, 34, 34); */
+    background: rgb(0,0,0);
+background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(90,93,93,1) 92%);
+    padding-bottom: 1.5rem !important;
+  }
+}
+
+.navbarclass {
   color: rgb(0, 149, 255);
 }
-@media screen and (max-width: 768px){
+
+@media screen and (max-width: 768px) {
   .formimage img {
-  width: auto;
+    width: auto;
   }
 }
 
-.labelcolor{
+.labelcolor {
   color: rgb(255, 0, 0);
+}
+
+.navicon {
+  font-size: 2rem;
 }

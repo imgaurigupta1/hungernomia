@@ -53,7 +53,7 @@ export default function Signup() {
           onSubmit={handleSubmit}
         >
           <div className='formhead text-center'>
-            <h2 className='w-auto mx-auto text-dark'>Sign up</h2>
+            <h2 className='w-auto mx-auto text-white'>Sign up</h2>
 
           </div>
           <div className="m-3">
