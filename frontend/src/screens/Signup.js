@@ -46,10 +46,10 @@ export default function Signup() {
   return (
     <div>
       <div className="container d-flex maincontainer formimage">
-      <img src="https://img.freepik.com/free-vector/color-doodle-food-burger-pattern_1409-3918.jpg?w=826&t=st=1696061596~exp=1696062196~hmac=1122255b806c5f6a9f5e61a7c2208453ff049d825248983133a8b7d6ad5b4da7"></img>
+      <img src="https://images.unsplash.com/photo-1564495584622-0bb3af6f668e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80"></img>
       <div className="container mainbg w-60">
         <form
-          className="w-70 mx-auto formbg roundedform"
+          className="formbg roundedform"
           onSubmit={handleSubmit}
         >
           <div className='formhead text-center'>
@@ -57,7 +57,7 @@ export default function Signup() {
 
           </div>
           <div className="m-3">
-            <label htmlFor="name" className="form-label text-success font-weight-bold">
+            <label htmlFor="name" className="form-label labelcolor font-weight-bold ">
               Name
             </label>
             <input
@@ -70,7 +70,7 @@ export default function Signup() {
             />
           </div>
           <div className="m-3">
-            <label htmlFor="email" className="form-label text-success font-weight-bold">
+            <label htmlFor="email" className="form-label labelcolor font-weight-bold">
               Email address
             </label>
             <input
@@ -83,7 +83,7 @@ export default function Signup() {
             />
           </div>
           <div className="m-3">
-            <label htmlFor="address" className="form-label text-success font-weight-bold">
+            <label htmlFor="address" className="form-label labelcolor font-weight-bold">
               Address
             </label>
             <fieldset>
@@ -101,7 +101,7 @@ export default function Signup() {
           <div className="m-3">
             <label
               htmlFor="exampleInputPassword1"
-              className="form-label text-success font-weight-bold"
+              className="form-label labelcolor font-weight-bold"
             >
               Password
             </label>

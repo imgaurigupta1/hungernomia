@@ -44,13 +44,13 @@ export default function Login() {
   return (
     
     <div className='container d-flex maincontainer formimage'>
-      <img src='https://www.freepik.com/free-vector/color-doodle-food-burger-pattern_58440087.htm#query=fast%20food%20background&position=24&from_view=search&track=ais'></img>
+      <img src='https://images.unsplash.com/photo-1606914501449-5a96b6ce24ca?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90https://images.unsplash.com/photo-1606914501449-5a96b6ce24ca?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80unsplash.com/photo-1543353071-10c8ba85a904?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'></img>
 
       <div className="container mainbg w-60">
         
 
         <form
-          className="w-70 mx-auto formbg roundedform"
+          className="formbg roundedform"
           onSubmit={handleSubmit}
         >
           <div className='formhead text-center'>

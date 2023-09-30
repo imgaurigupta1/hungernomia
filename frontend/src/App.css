@@ -122,6 +122,7 @@ video{
   .mainbg {
     padding: 0 !important;
     border-radius: 3rem !important;
+    width: 100% !important;
   }
 
   .buttoncss{
@@ -212,7 +213,15 @@ select{
 }
 
 }
-
 .navbarclass{
   color: rgb(0, 149, 255);
+}
+@media screen and (max-width: 768px){
+  .formimage img {
+  width: auto;
+  }
+}
+
+.labelcolor{
+  color: rgb(255, 0, 0);
 }
