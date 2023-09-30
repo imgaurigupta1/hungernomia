@@ -27,7 +27,7 @@ export default function Navbar() {
       }}
     >
       <div className="container-fluid">
-        <Link className="navbar-brand fs-1 fst-italic" to="/">
+        <Link className="navbarclass navbar-brand fs-1 fst-italic" to="/">
           Hungernomia
         </Link>
         <button
