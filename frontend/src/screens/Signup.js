@@ -45,11 +45,11 @@ export default function Signup() {
   };
   return (
     <div>
-      <div className="container d-flex maincontainer formimage">
-      <img src="https://images.unsplash.com/photo-1564495584622-0bb3af6f668e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80"></img>
-      <div className="container mainbg w-60">
+      <div className="container d-flex maincontainer formimage formimgright">
+      <img src="https://images.unsplash.com/photo-1606914501449-5a96b6ce24ca?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"></img>
+      <div className="container mainbg w-60 mainbgright">
         <form
-          className="formbg roundedform"
+          className="formbg roundedform roundedformright"
           onSubmit={handleSubmit}
         >
           <div className='formhead text-center'>

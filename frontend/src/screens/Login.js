@@ -43,14 +43,14 @@ export default function Login() {
   };
   return (
     
-    <div className='container d-flex maincontainer formimage'>
-      <img src='https://images.unsplash.com/photo-1606914501449-5a96b6ce24ca?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90https://images.unsplash.com/photo-1606914501449-5a96b6ce24ca?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80unsplash.com/photo-1543353071-10c8ba85a904?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'></img>
+    <div className='container d-flex maincontainer formimage formimgleft'>
+      <img src='https://images.unsplash.com/photo-1475332363216-323c9b7f1e81?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1933&q=80'></img>
 
-      <div className="container mainbg w-60">
+      <div className="container mainbg w-60 mainbgleft">
         
 
         <form
-          className="formbg roundedform"
+          className="formbg roundedform roundedformleft"
           onSubmit={handleSubmit}
         >
           <div className='formhead text-center'>

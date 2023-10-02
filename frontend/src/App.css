@@ -239,3 +239,129 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(90,93,93,1) 92%);
 .navicon {
   font-size: 2rem;
 }
+.customnavbar {
+  width: 100%;
+  background-color: transparent;
+  color: white;
+  padding: 1rem 0;
+}
+
+.navcontainer {
+  width: 90%;
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  flex-grow: 1;
+}
+
+.navbar-brand {
+  color: rgb(0, 166, 255);
+  font-size: 2rem !important;
+}
+
+.menu-button {
+  cursor: pointer;
+  display: none;
+}
+
+.menu-icon {
+  font-size: 2rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+.menu-icon.open {
+  transform: rotate(90deg);
+}
+
+.navbar-links ul{
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+
+.navbar-links li {
+  margin-right: 2rem;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.cart-button {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin-inline: 2rem;
+}
+
+.cart-icon {
+  font-size: 1.5rem;
+}
+
+
+@media (max-width: 768px) {
+  .menu-button {
+    display: block;
+  }
+
+  .navbar-links {
+    transform: translateY(-200%); 
+    transition: transform 0.3s ease-in-out; 
+  }
+  
+  .navbar-links.open {
+    transform: translateY(0); 
+  }
+
+  .navbar-links {
+    display: flex; 
+    flex-direction: column; 
+    background-color: transparent;
+    position: absolute;
+    top: 4.5rem;
+    right: 0;
+    z-index: 10;
+  }
+
+  .navbar-links li {
+    text-align: center;
+    margin: 0;
+  }
+
+  .navbar-links li a {
+    padding-inline: 0 !important;
+  }
+
+
+  .navbar-links ul {
+    display: block;
+  }
+
+  .cart-button{
+    margin-right: 1rem;
+  }
+}
+@media screen and (min-width: 900px) {
+  .mainbgleft {
+    margin-left: -7rem !important;
+    padding-left: 0 !important;
+  }
+  .roundedformleft {
+    padding-left: 0 !important;
+  }
+  .mainbgright {
+    margin-right: -7rem !important;
+    padding-right: 0 !important;
+  }
+  .roundedformright {
+    padding-right: 0 !important;
+  }
+}
