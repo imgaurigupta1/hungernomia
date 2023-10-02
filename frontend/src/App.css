@@ -327,6 +327,11 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(90,93,93,1) 92%);
     transform: translateY(0); 
   }
 
+  .navbar-brand {
+    /* color: rgb(0, 166, 255); */
+    font-size: 1.5rem !important;
+  }
+
   .navbar-links {
     display: flex; 
     flex-direction: column; 
