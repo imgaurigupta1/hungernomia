@@ -74,6 +74,7 @@ video {
 
 .formbg {
   padding: 3rem !important;
+  padding-block: 0rem !important;
   background: transparent;
   background: linear-gradient(90deg,
     );
@@ -81,6 +82,7 @@ video {
 
 .mainbg {
   padding: 2rem !important;
+  padding-block: 1rem !important;
   /* background: rgb(232, 140, 191); 
   background: radial-gradient( 
     circle,
@@ -233,7 +235,7 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(90,93,93,1) 92%);
 }
 
 .labelcolor {
-  color: rgb(255, 0, 0);
+  color: rgb(255, 149, 0);
 }
 
 .navicon {
