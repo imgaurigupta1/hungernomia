@@ -37,6 +37,7 @@
 
 video {
   height: 100%;
+  width: 100%;
   object-fit: cover;
   z-index: -1;
 }
@@ -232,6 +233,9 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(90,93,93,1) 92%);
   .formimage img {
     width: auto;
   }
+  .cart-button{
+    margin-right: 0;
+  }
 }
 
 .labelcolor {
@@ -349,6 +353,7 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(90,93,93,1) 92%);
 
   .cart-button{
     margin-right: 1rem;
+    margin-inline: 0;
   }
 }
 @media screen and (min-width: 900px) {
