@@ -186,6 +186,14 @@ select {
     margin-bottom: 48%;
   }
 }
+@media screen and (max-width: 541px){
+  .customfont{
+    font-size: 2.55rem;
+  }
+  .heroheading{
+    font-size: 4.5rem;
+  }
+}
 
 @media screen and (max-width: 500px) {
   .heroheading {
@@ -203,6 +211,7 @@ select {
   }
 
 }
+
 
 @media screen and (max-width: 400px) {
   .heroheading {
