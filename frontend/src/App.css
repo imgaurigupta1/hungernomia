@@ -351,14 +351,14 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(90,93,93,1) 92%);
 }
 @media screen and (min-width: 900px) {
   .mainbgleft {
-    margin-left: -7rem !important;
+    margin-left: -3rem !important;
     padding-left: 0 !important;
   }
   .roundedformleft {
     padding-left: 0 !important;
   }
   .mainbgright {
-    margin-right: -7rem !important;
+    margin-right: -3rem !important;
     padding-right: 0 !important;
   }
   .roundedformright {
