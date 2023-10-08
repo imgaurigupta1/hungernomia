@@ -16,7 +16,7 @@ export default function Signup() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const response = await fetch("https://hungernomiawebsitebackend.vercel.app/api/createuser", {
+    const response = await fetch("https://hungernomiabackend.vercel.app/api/createuser", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
