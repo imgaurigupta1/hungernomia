@@ -212,7 +212,7 @@ select {
     width: auto;
   }
   .cart-button{
-    margin-right: 0;
+    margin-right: 0.2rem;
   }
   .heroheading {
     font-size: 4rem;
