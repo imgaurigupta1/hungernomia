@@ -3,7 +3,6 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Card from "../components/Card";
 const LazyHomeContent = lazy(() => import("../components/HomeContent"));
-
 export default function Home() {
   const [foodCat, setFoodCat] = useState([]);
   const [foodItem, setFoodItem] = useState([]);
@@ -80,63 +79,17 @@ export default function Home() {
               setSearch(e.target.value);
             }}
           />
-       <Suspense fallback={<div>Loading Home Content...</div>}>
-        <LazyHomeContent foodCat={foodCat} foodItem={foodItem} search={search} />
-      </Suspense>
-            
-      <div className="m-3">
-        <div className="container">
-          {foodCat !== []
-            ? foodCat.map((data) => {
-                return (
-                  // justify-content-center
-                  <div className="row mb-3">
-                    <div key={data._id} className="fs-3 m-3">
-                      {data.CategoryName}
-                    </div>
-                    <hr
-                      id="hr-success"
-                      style={{
-                        height: "2px",
-                        backgroundImage:
-                          "-webkit-linear-gradient(left,rgb(0, 255, 137),rgb(0, 0, 0))",
-                      }}
-                    />
-                    {foodItem !== [] ? (
-                      foodItem
-                        .filter(
-                          (items) =>
-                            items.CategoryName === data.CategoryName &&
-                            items.name
-                              .toLowerCase()
-                              .includes(search.toLowerCase())
-                        )
-                        .map((filterItems) => {
-                          return (
-                            <div
-                              key={filterItems.id}
-                              className="col-12 col-md-6 col-lg-3"
-                            >
-                              {/* {console.log(filterItems.url)} */}
-                              <Card
-                                foodItem={filterItems}
-                                // item={filterItems}
-                                options={filterItems.options[0]}
-                                // imgSrc={filterItems.img}
-                              />
-                            </div>
-                          );
-                        })
-                    ) : (
-                      <div> No Such Data </div>
-                    )}
-                  </div>
-                );
-              })
-            : ""}
         </div>
       </div>
 
+      {redirectingToPayment ? (
+            <p className="text-white">Redirecting to payment...</p>
+          ) : (
+            <button className="btn bg-success mt-5" onClick={composeFunctions}>
+              {" "}
+              Check Out{" "}
+            </button>
+          )}
       {showScrollButton && ( 
         <div className="position-fixed toparrow">
           <button className="text-danger" onClick={scrollToTop}>&#8593;</button>
