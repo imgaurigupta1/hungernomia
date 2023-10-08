@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, lazy, Suspense } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Card from "../components/Card";
@@ -82,14 +82,9 @@ export default function Home() {
         </div>
       </div>
 
-      {redirectingToPayment ? (
-            <p className="text-white">Redirecting to payment...</p>
-          ) : (
-            <button className="btn bg-success mt-5" onClick={composeFunctions}>
-              {" "}
-              Check Out{" "}
-            </button>
-          )}
+      <Suspense fallback={<div>Loading Home Content...</div>}>
+        <LazyHomeContent foodCat={foodCat} foodItem={foodItem} search={search} />
+      </Suspense>
       {showScrollButton && ( 
         <div className="position-fixed toparrow">
           <button className="text-danger" onClick={scrollToTop}>&#8593;</button>
