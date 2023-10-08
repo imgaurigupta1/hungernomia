@@ -203,27 +203,6 @@ select {
 }
 
 
-@media screen and (max-width: 400px) {
-  .heroheading {
-    font-size: 3rem;
-    text-align: center;
-  }
-
-  .customfont {
-    font-size: 2rem;
-    text-align: center;
-  }
-
-  .minorheroheading {
-    margin-bottom: 68%;
-  }
-  .navbarcss {
-    background: rgb(0,0,0);
-background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(90,93,93,1) 92%);
-    padding-bottom: 1.5rem !important;
-  }
-}
-
 .navbarclass {
   color: rgb(0, 149, 255);
 }
@@ -243,6 +222,27 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(90,93,93,1) 92%);
   .customfont {
     font-size: 2.75rem;
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .heroheading {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .customfont {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .minorheroheading {
+    margin-bottom: 68%;
+  }
+  .navbarcss {
+    background: rgb(0,0,0);
+background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(90,93,93,1) 92%);
+    padding-bottom: 1.5rem !important;
   }
 }
 
