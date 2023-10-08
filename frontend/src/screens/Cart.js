@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import { useCart, useDispatchCart } from "../components/ContextReducer";
 import { loadStripe } from "@stripe/stripe-js";
 
@@ -6,6 +6,7 @@ export default function Cart() {
   let data = useCart();
   // console .log(data);
   let dispatch = useDispatchCart();
+  const [redirectingToPayment, setRedirectingToPayment] = useState(false);
   if (data.length === 0) {
     return (
       <div>
@@ -121,10 +122,14 @@ export default function Cart() {
           <h1 className="fs-2 text-white">Total Price: {totalPrice}/-</h1>
         </div>
         <div>
-          <button className="btn bg-success mt-5 " onClick={composeFunctions}>
-            {" "}
-            Check Out{" "}
-          </button>
+        {redirectingToPayment ? (
+            <p className="text-white">Redirecting to payment...</p>
+          ) : (
+            <button className="btn bg-success mt-5" onClick={composeFunctions}>
+              {" "}
+              Check Out{" "}
+            </button>
+          )}
         </div>
       </div>
     </div>
