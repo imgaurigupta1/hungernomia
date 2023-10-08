@@ -299,6 +299,13 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(90,93,93,1) 92%);
   margin: 0;
 }
 
+.formimgleft img{
+  object-position: center center;
+}
+
+.formimgright img{
+  object-position: center center;
+}
 
 .navbar-links li {
   margin-right: 2rem;
