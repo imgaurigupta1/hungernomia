@@ -177,7 +177,7 @@ select {
 
 @media screen and (max-width: 920px) {
   .minorheroheading {
-    margin-bottom: 73%;
+    margin-bottom: 30%;
   }
 }
 
@@ -196,18 +196,8 @@ select {
 }
 
 @media screen and (max-width: 500px) {
-  .heroheading {
-    font-size: 4rem;
-    text-align: center;
-  }
-
-  .customfont {
-    font-size: 2.75rem;
-    text-align: center;
-  }
-
   .minorheroheading {
-    margin-bottom: 78%;
+    margin-bottom: 43%;
   }
 
 }
@@ -244,6 +234,15 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(90,93,93,1) 92%);
   }
   .cart-button{
     margin-right: 0;
+  }
+  .heroheading {
+    font-size: 4rem;
+    text-align: center;
+  }
+
+  .customfont {
+    font-size: 2.75rem;
+    text-align: center;
   }
 }
 
