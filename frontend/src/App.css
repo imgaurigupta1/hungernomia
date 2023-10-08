@@ -331,6 +331,7 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(90,93,93,1) 92%);
 @media (max-width: 768px) {
   .menu-button {
     display: block;
+    margin-left: 0.2rem;
   }
 
   .navbar-links {
